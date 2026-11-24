@@ -1,0 +1,29 @@
+# Keep credentials and machine-local configuration out of Git.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.jks
+*.keystore
+key.properties
+local.properties
+
+# Web build and dependencies
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+*.log
+.wrangler/
+
+# Supabase local metadata
+supabase/.branches/
+supabase/.temp/
+
+# Android build output and IDE state
+.gradle/
+.idea/
+android/**/build/
+
+.DS_Store
